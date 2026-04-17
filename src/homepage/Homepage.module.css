@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.html {
+    font-size: 16px;
+}
+
+.container {
+    border: solid 2px black;
+}
+
+.imageHeader {
+    background-image: url('../images/headerImage.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 300px;
+}
