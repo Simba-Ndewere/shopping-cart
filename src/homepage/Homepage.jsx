@@ -7,9 +7,12 @@ const Homepage = () => {
             <div className={homepageCss.container}>
                 <div className={homepageCss.header}>
                     <div className={homepageCss.imageHeader}></div>
-                    <p className={homepageCss.title}>A New Box Of Toys Every Month</p>
-                    <div className={homepageCss.btn}>
-                        <p className={homepageCss.headerButton}>GET YOUR TOYS</p>
+                    <div className={homepageCss.titleButton}>
+                        <p className={homepageCss.title}>A New Box Of Toys Every Month</p>
+                        <p className={homepageCss.headerDescr}>We deliver boxes of fantastic handpicked appropriate toys books and puzzles straight to your door</p>
+                        <div className={homepageCss.btn}>
+                            <p className={homepageCss.headerButton}>GET YOUR TOYS</p>
+                        </div>
                     </div>
                 </div>
             </div>
