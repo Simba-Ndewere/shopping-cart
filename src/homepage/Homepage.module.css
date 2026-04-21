@@ -10,7 +10,6 @@
 
 .container {
     font-family: "Open Sans", sans-serif;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -28,6 +27,7 @@
     border-radius: 50px;
     background-color: #3f6146;
     padding: 10px;
+    color: white;
 }
 
 .title {
@@ -50,7 +50,7 @@
     align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     .header {
         flex-direction: row-reverse;
         justify-content: center;
@@ -100,5 +100,9 @@
         flex: 1;
         padding-left: 2em;
         margin-left: 2.5em;
+    }
+
+    .container {
+        max-width: 1200px;
     }
 }
