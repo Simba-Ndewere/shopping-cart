@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.html {
+    font-size: 16px;
+}
+
+.container {
+    font-family: "Open Sans", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: solid 2px red;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.middle {
+    display: flex;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
