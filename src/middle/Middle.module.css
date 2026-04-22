@@ -12,19 +12,59 @@
     font-family: "Open Sans", sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-    border: solid 2px red;
 }
 
 .title {
     font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
     font-weight: 500;
 }
 
 .middle {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.title {
-    width: 100%;
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1em;
+    padding-top: 0em;
     text-align: center;
+}
+
+.iconImage1 {
+    width: 30%;
+    height: 30%;
+}
+
+.iconTitle1 {
+    font-weight: 500;
+}
+
+.iconDescr1 {}
+
+@media (min-width: 700px) {
+
+    .icons {
+        display: flex;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .iconImage1 {
+        width: 60%;
+        height: 60%;
+    }
+
 }
