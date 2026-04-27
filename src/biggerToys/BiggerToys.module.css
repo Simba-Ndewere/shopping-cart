@@ -63,7 +63,8 @@
 
 @media (min-width: 700px) {
     .toys {
-        padding: 5em;
+        padding-left: 5em;
+        padding-right: 5em;;
     }
 
     .bigToys {
