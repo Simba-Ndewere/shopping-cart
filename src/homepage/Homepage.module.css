@@ -93,12 +93,11 @@
     .imageHeader {
         background-size: contain;
         flex: 1;
-        min-height: 500px;
+        min-height: 600px;
     }
 
     .titleButton {
         flex: 1;
-        padding-left: 2em;
         margin-left: 2.5em;
     }
 
