@@ -62,13 +62,9 @@
 }
 
 @media (min-width: 700px) {
-    .toys {
-        padding-left: 5em;
-        padding-right: 5em;;
-    }
 
     .bigToys {
-        min-height: 500px;
+        min-height: 250px;
         padding: 4em;
         gap: 30px;
     }
@@ -88,7 +84,7 @@
     }
 
     .title {
-        font-size: 2.8rem;
+        font-size: 2rem;
         font-weight: 700;
     }
 
@@ -101,5 +97,23 @@
         justify-content: center;
         align-items: center;
         display: block;
+    }
+
+    @media (min-width: 1000px) {
+        .toys {
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+
+        .bigToys {
+            min-height: 500px;
+            padding: 4em;
+            gap: 30px;
+        }
+
+        .title {
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
     }
 }
