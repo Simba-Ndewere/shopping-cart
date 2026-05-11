@@ -1,13 +1,15 @@
 import footerCss from './Footer.module.css'
 
-const footerCss = () => {
+const Footer = () => {
     return (<>
         <div className={footerCss.container}>
             <div className={footerCss.footer}>
-                <div className={footerCss.tittle}></div>
+                <div className={footerCss.title}>
+                    Subscribe Newsletter
+                </div>
             </div>
         </div>
     </>)
 }
 
-export default footerCss;
+export default Footer;
