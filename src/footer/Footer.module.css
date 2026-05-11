@@ -56,11 +56,25 @@
     text-align: center;
 }
 
-.header {
-
-}
+.header {}
 
 .headerTitle {
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+@media (min-width: 700px) {
+    .headers {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1000px) {
+    .headers {
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-bottom: 5em;
+    }
 }
