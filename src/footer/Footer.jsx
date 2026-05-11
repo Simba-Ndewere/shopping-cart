@@ -7,6 +7,10 @@ const Footer = () => {
                 <div className={footerCss.title}>
                     Subscribe Newsletter
                 </div>
+                <div className={footerCss.subscribe}>
+                    <div className={footerCss.email}>Enter your email</div>
+                    <div className={footerCss.subscribeBtn}>Subscribe</div>
+                </div>
             </div>
         </div>
     </>)
