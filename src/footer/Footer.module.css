@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.html {
+    font-size: 16px;
+}
+
+.container {
+    font-family: "Open Sans", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #efeee7;
+}
+
+.footer {
+    
+}
