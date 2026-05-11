@@ -49,3 +49,18 @@
     border-radius: 30px;
     font-weight: 500;
 }
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header {
+
+}
+
+.headerTitle {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
