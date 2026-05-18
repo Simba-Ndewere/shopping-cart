@@ -52,7 +52,8 @@
   margin-left: 50px;
 }
 
-.menu {
+.menu,
+.closeMenu {
     width: 40px;
     height: 40px;
 }
