@@ -25,6 +25,7 @@
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+  box-sizing: border-box;
 }
 
 .sidenav a {
