@@ -11,10 +11,9 @@ const Navigation = () => {
             <img className={navigationCss.menu} onClick={() => { setMenuClicked(!menuClicked) }} src={menuImg} />
             <div className={navigationCss.sidenav} style={{width : menuClicked && 250 }}>
                 <a className={navigationCss.closebtn} onClick={() => { setMenuClicked(!menuClicked) }}>&times;</a>
-                <a>About</a>
-                <a>Services</a>
-                <a>Clients</a>
-                <a>Contact</a>
+                <a>Home</a>
+                <a>Shop</a>
+                <a>Cart</a>
             </div>
         </div>
     </>
