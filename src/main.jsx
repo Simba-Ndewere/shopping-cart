@@ -9,11 +9,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {}
+    ]
   },
-  {
-    path: "shop",
-    element: <Shop />,
-  },
+  
 ]);
 
 createRoot(document.getElementById('root')).render(
