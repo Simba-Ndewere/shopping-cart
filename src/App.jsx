@@ -9,9 +9,6 @@ function App() {
   return (
     <>
         <Navigation/>
-        <Homepage/>
-        <Middle/>
-        <Biggertoys/>
         <Footer/>
     </>
   )
