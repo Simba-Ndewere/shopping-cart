@@ -12,7 +12,7 @@ const Navigation = () => {
             <img className={navigationCss.menu} onClick={() => { setMenuClicked(!menuClicked) }} src={menuImg} />
             <div className={navigationCss.sidenav} style={{ width: menuClicked && 250 }}>
                 <a className={navigationCss.closebtn} onClick={() => { setMenuClicked(!menuClicked) }}>&times;</a>
-                <a>Home</a>
+                <Link to ='home'>Home</Link>
                 <Link to ='shop'>Shop</Link>
                 <a>Cart</a>
             </div>
