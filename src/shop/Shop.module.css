@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.html {
+    font-size: 16px;
+}
+
+.container {
+    border: solid 2px red;
+    font-family: "Open Sans", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #efeee7;
+}
+
+.shop {
+    border: solid 2px blue;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image1 {
+    border: solid 2px green;
+    height: 200px;
+}
+
+.toys {
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
