@@ -17,18 +17,162 @@ const Shop = () => {
         <div className={shopCss.container}>
             <div className={shopCss.toys}>Toys</div>
             <div className={shopCss.shop}>
-                <img className={shopCss.image1} src={shop1}/>
-                <img className={shopCss.image1} src={shop2}/>
-                <img className={shopCss.image1} src={shop3}/>
-                <img className={shopCss.image1} src={shop4}/>
-                <img className={shopCss.image1} src={shop5}/>
-                <img className={shopCss.image1} src={shop6}/>
-                <img className={shopCss.image1} src={shop7}/>
-                <img className={shopCss.image1} src={shop8}/>
-                <img className={shopCss.image1} src={shop9}/>
-                <img className={shopCss.image1} src={shop10}/>
-                <img className={shopCss.image1} src={shop11}/>
-                <img className={shopCss.image1} src={shop12}/>
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop1}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop2}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop3}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop4}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop5}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop6}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop7}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop8}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop9}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop10}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop11}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={shopCss.toyCont}>
+                    <img className={shopCss.image1} src={shop12}/>
+                    <div className={shopCss.title}>Batmobile</div>
+                    <div className={shopCss.priceQuantity}>
+                        <div className={shopCss.price}>£49</div>
+                        <div className={shopCss.quantity}>
+                            <div className={shopCss.decrement}> - </div>
+                            <div className={shopCss.toyQuantity}>1</div>
+                            <div className={shopCss.increment}> + </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </>
