@@ -31,12 +31,16 @@
     padding: 10px;
     font-size: 1.8rem;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
 }
 
 .toyCont {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    border: solid 1px gray;
+    padding: 5px;
 }
 
 .priceQuantity {
@@ -61,3 +65,25 @@
     cursor: pointer;
 }
 
+.addToCart {
+    border-radius: 50px;
+    background-color: #3f6146;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 700px) {
+    .container {
+        padding-top: 35px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .shop {
+        grid-template-columns: 30% 30% 30%
+    }
+
+}
