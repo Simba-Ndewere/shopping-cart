@@ -15,7 +15,7 @@ import shop12 from '../images/shop12.jpg';
 const Shop = () => {
     return <>
         <div className={shopCss.container}>
-            <div className={shopCss.toys}>Toys</div>
+            <div className={shopCss.toys}>Store</div>
             <div className={shopCss.shop}>
                 <div className={shopCss.toyCont}>
                     <img className={shopCss.image1} src={shop1}/>
@@ -28,6 +28,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -41,6 +42,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -54,6 +56,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -67,6 +70,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -80,6 +84,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -93,6 +98,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -106,6 +112,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -119,6 +126,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -132,6 +140,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -145,6 +154,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -158,6 +168,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -171,6 +182,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
+                    <div className={shopCss.addToCart}>Add to cart</div>
                 </div>
 
             </div>
