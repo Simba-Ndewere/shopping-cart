@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.html {
+    font-size: 16px;
+}
+
+.container {
+    font-family: "Open Sans", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #efeee7;
+}
+
+.cartCard {
+    padding: 10px;
+    display: flex;
+    border: solid 0.1px #3f6146;
+    border-radius: 10px;
+}
+
+.cartInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.title {
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.cartImage {
+    width: 50%;
+    height: auto;
+}
+
+.deleteIcon {
+    height: 20px;
+    width: 20px;
+}
+
+.quantity {
+    display: flex;
+    gap: 10px;
+}
+
+.quantites {
+    display: flex;
+    justify-content: space-between;
+}
+
+.increment,
+.decrement {
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    display: flex;
+    background-color: lightgrey;
+    border-radius: 10px;
+    cursor: pointer;
+}
