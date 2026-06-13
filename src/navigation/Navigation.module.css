@@ -82,12 +82,11 @@
     padding-top: 10px;
     max-width: 1200px;
     margin: 0 auto;
-    left: auto;
   }
 
   .sidenav a {
     color: #111;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .sidenav a:hover {
@@ -97,7 +96,8 @@
   }
 
   .closebtn {
-    display: none !important;;
+    display: none !important;
+    ;
   }
 
   .container {
@@ -105,4 +105,12 @@
   }
 }
 
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  .sidenav a {
+    font-size: 15px;
+  }
+
+  .sidenav {
+    left: auto;
+  }
+}
