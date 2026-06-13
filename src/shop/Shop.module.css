@@ -39,8 +39,11 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    border: solid 1px gray;
     padding: 5px;
+}
+
+.toyCont:hover {
+    border: solid 0.1px #3f6146;
 }
 
 .priceQuantity {
