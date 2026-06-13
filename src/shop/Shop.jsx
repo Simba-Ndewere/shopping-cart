@@ -28,7 +28,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                    
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -42,7 +42,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+              
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -56,7 +56,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                    
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -70,7 +70,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                    
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -84,7 +84,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                    
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -98,7 +98,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                    
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -112,7 +112,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                    
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -126,7 +126,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                    
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -140,7 +140,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                   
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -154,7 +154,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                   
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -168,7 +168,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                    
                 </div>
 
                 <div className={shopCss.toyCont}>
@@ -182,7 +182,7 @@ const Shop = () => {
                             <div className={shopCss.increment}> + </div>
                         </div>
                     </div>
-                    <div className={shopCss.addToCart}>Add to cart</div>
+                    
                 </div>
 
             </div>
