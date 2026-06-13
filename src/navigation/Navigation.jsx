@@ -14,7 +14,7 @@ const Navigation = () => {
                 <a className={navigationCss.closebtn} onClick={() => { setMenuClicked(!menuClicked) }}>&times;</a>
                 <Link to ='home'>Home</Link>
                 <Link to ='shop'>Store</Link>
-                <a>Cart</a>
+                <Link to ='cart'>Cart</Link>
             </div>
         </div>
     </>
