@@ -16,6 +16,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 50px;
+}
+
+.contBackground {
+    background-color: #efeee7;
 }
 
 .cartCard {
@@ -35,10 +40,16 @@
     font-size: 0.8rem;
 }
 
-.title {
+.title,
+.titleHeader {
     padding: 10px;
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+.titleHeader{
+    font-size: 2rem;
+    padding-top: 15px;
 }
 
 .cartImage {
@@ -72,14 +83,12 @@
     cursor: pointer;
 }
 
-.checkout {
-    border: solid 0.1px #3f6146;
-    border-radius: 10px;
-}
 
 .checkoutCont {
     display: flex;
     flex-direction: column;
+    border: solid 0.1px #3f6146;
+    border-radius: 10px;
 }
 
 .titleAmount {
@@ -111,9 +120,22 @@
     justify-content: center;
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productBilling {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media (min-width: 700px) {
-    .cartCard {
-        width: 70%;
+ 
+    .cards {
+        width: 45%;
     }
 
     .increment,
@@ -131,10 +153,19 @@
         padding-top: 40px;
         padding-left: 25px;
     }
+
+    .productBilling {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .checkout {
+        width: 45%;
+        padding-right: 15px;
+    }
 }
 
-@media (min-width: 700px) {
-    .cartCard {
-        width: 50%;
-    }
+@media (min-width: 1000px) {
+
 }

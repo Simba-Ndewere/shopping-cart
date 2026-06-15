@@ -17,7 +17,7 @@ const Shop = () => {
 
     const toysArray = [shop1, shop2, shop3, shop4, shop5, shop6, shop7, shop8, shop9, shop10, shop11, shop12];
 
-    return <>
+    return <div className={shopCss.contBackground}>
         <div className={shopCss.container}>
             <div className={shopCss.toys}>Store</div>
             <div className={shopCss.shop}>
@@ -39,7 +39,7 @@ const Shop = () => {
 
             </div>
         </div>
-    </>
+    </div>
 }
 
 export default Shop;

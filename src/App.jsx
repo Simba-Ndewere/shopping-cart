@@ -1,14 +1,15 @@
-import Footer from './footer/Footer.jsx';
 import Navigation from './navigation/Navigation.jsx';
 import { Outlet } from 'react-router';
+import './App.css';
 
 function App() {
 
   return (
     <>
-        <Navigation/>
-        <Outlet/>
-        <Footer/>
+      <div className="container">
+        <Navigation />
+        <Outlet />
+      </div>
     </>
   )
 }

@@ -7,7 +7,7 @@ const Navigation = () => {
 
     const [menuClicked, setMenuClicked] = useState(false);
 
-    return <>
+    return <div className={navigationCss.contBackground}>
         <div className={navigationCss.container}>
             <img className={navigationCss.menu} onClick={() => { setMenuClicked(!menuClicked) }} src={menuImg} />
             <div className={navigationCss.sidenav} style={{ width: menuClicked && 250 }}>
@@ -17,7 +17,7 @@ const Navigation = () => {
                 <Link to ='cart'>Cart</Link>
             </div>
         </div>
-    </>
+    </div>
 }
 
 export default Navigation;

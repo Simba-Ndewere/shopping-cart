@@ -59,6 +59,12 @@
   cursor: pointer;
 }
 
+.contBackground {
+    background-color: #dce2cb;
+    height: 50px;
+    text-decoration: underline;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -82,6 +88,7 @@
     padding-top: 10px;
     max-width: 1200px;
     margin: 0 auto;
+    position: static;
   }
 
   .sidenav a {
@@ -97,7 +104,6 @@
 
   .closebtn {
     display: none !important;
-    ;
   }
 
   .container {
@@ -110,7 +116,4 @@
     font-size: 15px;
   }
 
-  .sidenav {
-    left: auto;
-  }
 }

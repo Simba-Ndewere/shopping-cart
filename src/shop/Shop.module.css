@@ -13,6 +13,7 @@
     max-width: 1200px;
     margin: 0 auto;
     background-color: #efeee7;
+    padding-bottom: 50px;
 }
 
 .shop {
@@ -22,15 +23,20 @@
     justify-content: center;
 }
 
+.contBackground {
+    background-color: #efeee7;
+}
+
 .image1 {
     width: 100%;
     height: auto;
 }
 
 .toys {
-    padding: 10px;
-    font-size: 1.8rem;
+    padding: 18px;
+    font-size: 2rem;
     font-weight: 500;
+    padding-left: 25px;
 }
 
 .toyCont {
