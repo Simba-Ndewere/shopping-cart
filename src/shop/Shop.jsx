@@ -26,27 +26,30 @@ const Shop = () => {
             .then((res) => setProducts(res.products));
     }, []);
 
-    console.log(products);
+    //console.log(products[0].brand);
+    console.log(products)
 
     return <div className={shopCss.contBackground}>
         <div className={shopCss.container}>
             <div className={shopCss.toys}>Store</div>
             <div className={shopCss.shop}>
 
-                {toysArray.map((toy) => {
-                    return <div key = {1} className={shopCss.toyCont}>
-                        <img className={shopCss.image1} src={toy} />
-                        <div className={shopCss.title}>Batmobile</div>
-                        <div className={shopCss.priceQuantity}>
-                            <div className={shopCss.price}>£49</div>
-                            <div className={shopCss.quantity}>
-                                <div className={shopCss.decrement}> - </div>
-                                <div className={shopCss.toyQuantity}>1</div>
-                                <div className={shopCss.increment}> + </div>
+
+                {products.length != 0 ? toysArray.map((toy, index) => {
+                        return <div key={products[index].id} className={shopCss.toyCont}>
+                            <img className={shopCss.image1} src={toy} />
+                            <div className={shopCss.title}>{products[index].title}</div>
+                            <div className={shopCss.description}>{products[index].description}</div>
+                            <div className={shopCss.priceQuantity}>
+                                <div className={shopCss.price}>{products[index].price}</div>
+                                <div className={shopCss.quantity}>
+                                    <div className={shopCss.decrement}> - </div>
+                                    <div className={shopCss.toyQuantity}>1</div>
+                                    <div className={shopCss.increment}> + </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                })}
+                    }) : <div>Loading..</div>}
 
             </div>
         </div>
