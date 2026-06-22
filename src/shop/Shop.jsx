@@ -12,10 +12,21 @@ import shop9 from '../images/shop9.jpg';
 import shop10 from '../images/shop10.jpg';
 import shop11 from '../images/shop11.jpg';
 import shop12 from '../images/shop12.jpg';
+import { useEffect, useState } from 'react';
+
 
 const Shop = () => {
 
     const toysArray = [shop1, shop2, shop3, shop4, shop5, shop6, shop7, shop8, shop9, shop10, shop11, shop12];
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch('https://dummyjson.com/products/category/smartphones')
+            .then((res) => res.json())
+            .then((res) => setProducts(res.products));
+    }, []);
+
+    console.log(products);
 
     return <div className={shopCss.contBackground}>
         <div className={shopCss.container}>
@@ -23,7 +34,7 @@ const Shop = () => {
             <div className={shopCss.shop}>
 
                 {toysArray.map((toy) => {
-                    return <div className={shopCss.toyCont}>
+                    return <div key = {1} className={shopCss.toyCont}>
                         <img className={shopCss.image1} src={toy} />
                         <div className={shopCss.title}>Batmobile</div>
                         <div className={shopCss.priceQuantity}>
