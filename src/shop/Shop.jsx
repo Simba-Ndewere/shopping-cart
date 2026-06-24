@@ -21,7 +21,7 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://dummyjson.com/products/category/smartphones')
+        fetch('https://dummyjson.com/products/category/smartphones/?delay=2000')
             .then((res) => res.json())
             .then((res) => setProducts(res.products));
     }, []);
