@@ -3,9 +3,12 @@ import menuImg from '../images/menu.png';
 import { Link } from "react-router";
 import { useState } from 'react';
 
-const Navigation = () => {
+const Navigation = ({cart}) => {
 
     const [menuClicked, setMenuClicked] = useState(false);
+
+    console.log("nav");
+    console.log(cart);
 
     return <div className={navigationCss.contBackground}>
         <div className={navigationCss.container}>
