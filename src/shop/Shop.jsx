@@ -15,6 +15,8 @@ import shop12 from '../images/shop12.jpg';
 
 import { useEffect, useState } from 'react';
 import { useOutletContext } from "react-router";
+import { increment } from '../productUtils';
+import { decrement } from '../productUtils';
 
 const Shop = () => {
 
@@ -27,45 +29,6 @@ const Shop = () => {
             .then((res) => res.json())
             .then((res) => setProducts(res.products));
     }, []);
-
-    const increment = (productId, price) => {
-        if (!cart.find(({ id }) => id === productId)) {
-            setCart([
-                ...cart,
-                {
-                    id: productId,
-                    quantity: 1,
-                    price: price
-                }
-            ])
-        } else {
-            setCart(cart.map(product => {
-                if (productId == product.id) {
-                    const quantityVal = product.quantity;
-                    return { ...product, quantity: quantityVal + 1 }
-                } else {
-                    return product;
-                }
-            }))
-        }
-    }
-
-    const decrement = (productId) => {
-        const product = cart.find(({ id }) => id === productId);
-        if (product) {
-            product.quantity > 1 ?
-                setCart(cart.map(product => {
-                    if (productId == product.id) {
-                        let quantityVal = product.quantity;
-                        return { ...product, quantity: quantityVal - 1 }
-                    } else {
-                        return product;
-                    }
-                })) : setCart(
-                    cart.filter(a => a.id !== productId)
-                );
-        }
-    }
 
     return <div className={shopCss.contBackground}>
 
@@ -81,9 +44,9 @@ const Shop = () => {
                         <div className={shopCss.priceQuantity}>
                             <div className={shopCss.price}>{products[index].price}</div>
                             <div className={shopCss.quantity}>
-                                <div className={shopCss.decrement} onClick={() => decrement(products[index].id)}> - </div>
+                                <div className={shopCss.decrement} onClick={() => decrement(cart,setCart,products[index].id)}> - </div>
                                 <div className={shopCss.toyQuantity}>1</div>
-                                <div className={shopCss.increment} onClick={() => increment(products[index].id, products[index].price)}> + </div>
+                                <div className={shopCss.increment} onClick={() => increment(cart, setCart, products[index].id, products[index].price)}> + </div>
                             </div>
                         </div>
                     </div>
