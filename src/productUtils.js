@@ -36,3 +36,9 @@ export function decrement(cart, setCart, productId) {
             );
     }
 }
+
+export function deleteProduct(cart, setCart, productId) {
+    setCart(
+        cart.filter(a => a.id !== productId)
+    );
+}
