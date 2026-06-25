@@ -50,9 +50,20 @@ const Shop = () => {
         }
     }
 
-
-    const decrement = (productId, price) => {
-
+    const decrement = (productId) => {
+        if (cart.find(({ id }) => id === productId)) {
+            productId.quantity > 1 ?
+                setCart(cart.map(product => {
+                    if (productId == product.id) {
+                        const quantityVal = product.quantity;
+                        return { ...product, quantity: quantityVal - 1 }
+                    } else {
+                        return product;
+                    }
+                })) : setCart(
+                    cart.filter(a => a.id !== productId)
+                );
+        }
     }
 
     return <div className={shopCss.contBackground}>
@@ -69,7 +80,7 @@ const Shop = () => {
                         <div className={shopCss.priceQuantity}>
                             <div className={shopCss.price}>{products[index].price}</div>
                             <div className={shopCss.quantity}>
-                                <div className={shopCss.decrement} onClick={() => decrement(products[index].id, products[index].price)}> - </div>
+                                <div className={shopCss.decrement} onClick={() => decrement(products[index].id)}> - </div>
                                 <div className={shopCss.toyQuantity}>1</div>
                                 <div className={shopCss.increment} onClick={() => increment(products[index].id, products[index].price)}> + </div>
                             </div>
