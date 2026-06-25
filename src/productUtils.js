@@ -1,11 +1,12 @@
-export function increment(cart, setCart, productId, price) {
+export function increment(cart, setCart, productId, price, imageUrl) {
     if (!cart.find(({ id }) => id === productId)) {
         setCart([
             ...cart,
             {
                 id: productId,
                 quantity: 1,
-                price: price
+                price: price,
+                url: imageUrl
             }
         ])
     } else {
