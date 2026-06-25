@@ -12,9 +12,9 @@ const Navigation = ({ cart }) => {
 
     let cartSize = 0;
 
-    for(let a = 0; a < cart.length; a++){
-        cartSize = cartSize + cart[a].quantity;
-    }
+    cart.forEach(product => {
+        cartSize = cartSize + product.quantity;
+    });
 
     return <div className={navigationCss.contBackground}>
         <div className={navigationCss.container}>
