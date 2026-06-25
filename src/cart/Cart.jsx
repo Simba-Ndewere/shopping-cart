@@ -3,16 +3,15 @@ import shop1 from '../images/shop1.jpg';
 import deleteIcon from '../images/delete.png';
 
 const Cart = () => {
+
+    
+
     return <div className={cartCss.contBackground}>
         <div className={cartCss.container}>
             <div className={cartCss.titleHeader}>Cart</div>
 
             <div className={cartCss.productBilling}>
-
-
                 <div className={cartCss.cards}>
-
-
                     <div className={cartCss.cartCard}>
                         <img src={shop1} className={cartCss.cartImage} />
                         <div className={cartCss.cartInfo}>

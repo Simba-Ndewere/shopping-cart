@@ -7,9 +7,6 @@ const Navigation = ({ cart }) => {
 
     const [menuClicked, setMenuClicked] = useState(false);
 
-    console.log("nav");
-    console.log(cart);
-
     let cartSize = 0;
 
     cart.forEach(product => {
