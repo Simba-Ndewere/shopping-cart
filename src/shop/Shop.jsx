@@ -51,11 +51,12 @@ const Shop = () => {
     }
 
     const decrement = (productId) => {
-        if (cart.find(({ id }) => id === productId)) {
-            productId.quantity > 1 ?
+        const product = cart.find(({ id }) => id === productId);
+        if (product) {
+            product.quantity > 1 ?
                 setCart(cart.map(product => {
                     if (productId == product.id) {
-                        const quantityVal = product.quantity;
+                        let quantityVal = product.quantity;
                         return { ...product, quantity: quantityVal - 1 }
                     } else {
                         return product;
