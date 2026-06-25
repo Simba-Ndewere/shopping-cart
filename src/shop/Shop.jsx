@@ -30,6 +30,7 @@ const Shop = () => {
             .then((res) => setProducts(res.products));
     }, []);
 
+    console.log(products);    
     return <div className={shopCss.contBackground}>
 
         <div className={shopCss.container}>
@@ -38,7 +39,7 @@ const Shop = () => {
 
                 {products.length != 0 ? toysArray.map((toy, index) => {
                     return <div key={products[index].id} className={shopCss.toyCont}>
-                        <img className={shopCss.image1} src={toy} />
+                        <img className={shopCss.image1} src={products[index].images[1]} />
                         <div className={shopCss.title}>{products[index].title}</div>
                         <div className={shopCss.description}>{products[index].description}</div>
                         <div className={shopCss.priceQuantity}>
