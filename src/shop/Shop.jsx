@@ -1,4 +1,4 @@
-import shopCss from './Shop.module.css'
+import shopCss from './Shop.module.css';
 
 import shop1 from '../images/shop1.jpg';
 import shop2 from '../images/shop2.jpg';
@@ -28,12 +28,8 @@ const Shop = () => {
             .then((res) => setProducts(res.products));
     }, []);
 
-    console.log('increment');
-    console.log(cart);
-
-
     const increment = (productId, price) => {
-        if (!cart.find( ({id}) => id === productId)) {
+        if (!cart.find(({ id }) => id === productId)) {
             setCart([
                 ...cart,
                 {
@@ -53,6 +49,7 @@ const Shop = () => {
             }))
         }
     }
+
 
     const decrement = (productId, price) => {
 
