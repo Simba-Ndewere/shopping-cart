@@ -33,7 +33,7 @@ const Shop = () => {
                             <div className={shopCss.quantity}>
                                 <div className={shopCss.decrement} onClick={() => decrement(cart, setCart, products[index].id)}> - </div>
                                 <div className={shopCss.toyQuantity}>1</div>
-                                <div className={shopCss.increment} onClick={() => increment(cart, setCart, products[index].id, products[index].price, products[index].images[1])}> + </div>
+                                <div className={shopCss.increment} onClick={() => increment(cart, setCart, products[index].id, products[index].price, products[index].images[1], products[index].title)}> + </div>
                             </div>
                         </div>
                     </div>

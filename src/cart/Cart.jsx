@@ -6,62 +6,40 @@ import { increment } from '../productUtils';
 import { decrement } from '../productUtils';
 import { deleteProduct } from '../productUtils';
 
+import { useOutletContext } from "react-router";
+
 const Cart = () => {
 
- 
+    const [cart, setCart] = useOutletContext();
+
+    console.log(cart);
+
     return <div className={cartCss.contBackground}>
         <div className={cartCss.container}>
             <div className={cartCss.titleHeader}>Cart</div>
 
             <div className={cartCss.productBilling}>
+
                 <div className={cartCss.cards}>
-                    <div className={cartCss.cartCard}>
-                        <img src={shop1} className={cartCss.cartImage} />
-                        <div className={cartCss.cartInfo}>
-                            <div className={cartCss.name}>Batmobile</div>
-                            <div className={cartCss.price}>£89</div>
-                            <div className={cartCss.quantites}>
-                                <div className={cartCss.quantity}>
-                                    <div className={cartCss.decrement}> - </div>
-                                    <div className={cartCss.toyQuantity}>1</div>
-                                    <div className={cartCss.increment}> + </div>
-                                </div>
-                                <img src={deleteIcon} className={cartCss.deleteIcon} />
-                            </div>
-                        </div>
-                    </div>
 
-                    <div className={cartCss.cartCard}>
-                        <img src={shop1} className={cartCss.cartImage} />
-                        <div className={cartCss.cartInfo}>
-                            <div className={cartCss.name}>Batmobile</div>
-                            <div className={cartCss.price}>£89</div>
-                            <div className={cartCss.quantites}>
-                                <div className={cartCss.quantity}>
-                                    <div className={cartCss.decrement}> - </div>
-                                    <div className={cartCss.toyQuantity}>1</div>
-                                    <div className={cartCss.increment}> + </div>
+                    {cart.map(product => {
+                        return <div key={product.id} className={cartCss.cartCard}>
+                            <img src={product.url} className={cartCss.cartImage} />
+                            <div className={cartCss.cartInfo}>
+                                <div className={cartCss.name}>{product.name}</div>
+                                <div className={cartCss.price}>£{product.price}</div>
+                                <div className={cartCss.quantites}>
+                                    <div className={cartCss.quantity}>
+                                        <div className={cartCss.decrement}> - </div>
+                                        <div className={cartCss.toyQuantity}>1</div>
+                                        <div className={cartCss.increment}> + </div>
+                                    </div>
+                                    <img src={deleteIcon} className={cartCss.deleteIcon} />
                                 </div>
-                                <img src={deleteIcon} className={cartCss.deleteIcon} />
                             </div>
                         </div>
-                    </div>
+                    })}
 
-                    <div className={cartCss.cartCard}>
-                        <img src={shop1} className={cartCss.cartImage} />
-                        <div className={cartCss.cartInfo}>
-                            <div className={cartCss.name}>Batmobile</div>
-                            <div className={cartCss.price}>£89</div>
-                            <div className={cartCss.quantites}>
-                                <div className={cartCss.quantity}>
-                                    <div className={cartCss.decrement}> - </div>
-                                    <div className={cartCss.toyQuantity}>1</div>
-                                    <div className={cartCss.increment}> + </div>
-                                </div>
-                                <img src={deleteIcon} className={cartCss.deleteIcon} />
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
 
