@@ -11,6 +11,7 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useOutletContext();
 
+
     useEffect(() => {
         fetch('https://dummyjson.com/products/category/smartphones/?delay=2000')
             .then((res) => res.json())
@@ -24,6 +25,9 @@ const Shop = () => {
             <div className={shopCss.shop}>
 
                 {products.length != 0 ? productArray.map((product, index) => {
+
+                    const cartItem = cart.find(({ id }) => id === products[index].id);
+
                     return <div key={products[index].id} className={shopCss.toyCont}>
                         <img className={shopCss.image1} src={products[index].images[1]} />
                         <div className={shopCss.title}>{products[index].title}</div>
@@ -32,7 +36,8 @@ const Shop = () => {
                             <div className={shopCss.price}>{products[index].price}</div>
                             <div className={shopCss.quantity}>
                                 <div className={shopCss.decrement} onClick={() => decrement(cart, setCart, products[index].id)}> - </div>
-                                <div className={shopCss.toyQuantity}>1</div>
+                                <div className={shopCss.toyQuantity}> {cartItem ? cartItem.quantity : 0}
+                                </div>
                                 <div className={shopCss.increment} onClick={() => increment(cart, setCart, products[index].id, products[index].price, products[index].images[1], products[index].title)}> + </div>
                             </div>
                         </div>
