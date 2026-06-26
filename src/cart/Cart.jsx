@@ -22,7 +22,7 @@ const Cart = () => {
 
                 <div className={cartCss.cards}>
 
-                    {cart.map((product,index) => {
+                    {cart.map((product) => {
                         return <div key={product.id} className={cartCss.cartCard}>
                             <img src={product.url} className={cartCss.cartImage} />
                             <div className={cartCss.cartInfo}>
@@ -31,7 +31,7 @@ const Cart = () => {
                                 <div className={cartCss.quantites}>
                                     <div className={cartCss.quantity}>
                                         <div className={cartCss.decrement} onClick={() => decrement(cart, setCart, product.id)}> - </div>
-                                        <div className={cartCss.toyQuantity}>1</div>
+                                        <div className={cartCss.toyQuantity}>{product.quantity}</div>
                                         <div className={cartCss.increment} onClick={() => increment(cart, setCart, product.id, product.price, product.url, product.title)}> + </div>
                                     </div>
                                     <img src={deleteIcon} className={cartCss.deleteIcon} />
@@ -42,9 +42,6 @@ const Cart = () => {
 
 
                 </div>
-
-
-
                 <div className={cartCss.checkout}>
                     <div className={cartCss.checkoutCont}>
                         <p className={cartCss.title}>Billing Summary</p>
