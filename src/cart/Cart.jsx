@@ -15,8 +15,10 @@ const Cart = () => {
     let totalAmount = 0;
 
     cart.forEach(element => {
-        totalAmount += element.price;
+        totalAmount = totalAmount + element.price * element.quantity;
     });
+
+    console.log(totalAmount);
 
     return <div className={cartCss.contBackground}>
         <div className={cartCss.container}>
@@ -52,17 +54,17 @@ const Cart = () => {
 
                         <div className={cartCss.titleAmount}>
                             <p className={cartCss.code}>Promo-code</p>
-                            <p className={cartCss.fee}>-38</p>
+                            <p className={cartCss.fee}>-£38</p>
                         </div>
 
                         <div className={cartCss.titleAmount}>
                             <p className={cartCss.delivery}>Delivery</p>
-                            <p className={cartCss.fee}>45</p>
+                            <p className={cartCss.fee}>£45</p>
                         </div>
 
                         <div className={cartCss.titleAmount}>
                             <p className={cartCss.tax}>Tax</p>
-                            <p className={cartCss.fee}>45</p>
+                            <p className={cartCss.fee}>£31</p>
                         </div>
 
                         <div className={cartCss.titleAmount}>
