@@ -38,7 +38,7 @@ const Cart = () => {
                                         <div className={cartCss.toyQuantity}>{product.quantity}</div>
                                         <div className={cartCss.increment} onClick={() => increment(cart, setCart, product.id, product.price, product.url, product.title)}> + </div>
                                     </div>
-                                    <img src={deleteIcon} className={cartCss.deleteIcon} />
+                                    <img src={deleteIcon} className={cartCss.deleteIcon} onClick={() => deleteProduct(cart, setCart, product.id)}/>
                                 </div>
                             </div>
                         </div>
