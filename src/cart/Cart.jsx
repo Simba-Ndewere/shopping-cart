@@ -18,8 +18,6 @@ const Cart = () => {
         totalAmount = totalAmount + element.price * element.quantity;
     });
 
-    console.log(totalAmount);
-
     return <div className={cartCss.contBackground}>
         <div className={cartCss.container}>
             <div className={cartCss.titleHeader}>Cart</div>
