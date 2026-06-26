@@ -12,7 +12,11 @@ const Cart = () => {
 
     const [cart, setCart] = useOutletContext();
 
-    console.log(cart);
+    let totalAmount = 0;
+
+    cart.forEach(element => {
+        totalAmount += element.price;
+    });
 
     return <div className={cartCss.contBackground}>
         <div className={cartCss.container}>
@@ -63,7 +67,7 @@ const Cart = () => {
 
                         <div className={cartCss.titleAmount}>
                             <p className={cartCss.amount}>Total</p>
-                            <p className={cartCss.fee}>45</p>
+                            <p className={cartCss.fee}>£ {totalAmount}</p>
                         </div>
                     </div>
                     <p className={cartCss.pay}>Proceed to checkout</p>
