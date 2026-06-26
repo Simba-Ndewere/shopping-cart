@@ -2,10 +2,13 @@ import cartCss from './Cart.module.css';
 import shop1 from '../images/shop1.jpg';
 import deleteIcon from '../images/delete.png';
 
+import { increment } from '../productUtils';
+import { decrement } from '../productUtils';
+import { deleteProduct } from '../productUtils';
+
 const Cart = () => {
 
-    
-
+ 
     return <div className={cartCss.contBackground}>
         <div className={cartCss.container}>
             <div className={cartCss.titleHeader}>Cart</div>
