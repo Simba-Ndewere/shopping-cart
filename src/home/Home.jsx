@@ -8,10 +8,11 @@ const Home = () => {
                 <div className={homeCss.header}>
                     <div className={homeCss.imageHeader}></div>
                     <div className={homeCss.titleButton}>
-                        <p className={homeCss.title}>A New Box Of Toys Every Month</p>
-                        <p className={homeCss.headerDescr}>We deliver boxes of fantastic handpicked appropriate toys books and puzzles straight to your door</p>
+                        <p className={homeCss.title}>The Latest Smartphones At Great Prices</p>
+                        <p className={homeCss.headerDescr}>Discover premium smartphones from the world's leading brands.
+                            Find the perfect device for work, gaming, photography, and everyday life.</p>
                         <div className={homeCss.btn}>
-                            <p className={homeCss.headerButton}>Get Your Toys</p>
+                            <p className={homeCss.headerButton}>Shop Phones</p>
                         </div>
                     </div>
                 </div>
