@@ -11,7 +11,6 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useOutletContext();
 
-
     useEffect(() => {
         fetch('https://dummyjson.com/products/category/smartphones/?delay=2000')
             .then((res) => res.json())

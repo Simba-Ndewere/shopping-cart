@@ -1,10 +1,7 @@
 import cartCss from './Cart.module.css';
-import shop1 from '../images/shop1.jpg';
 import deleteIcon from '../images/delete.png';
 
-import { increment } from '../productUtils';
-import { decrement } from '../productUtils';
-import { deleteProduct } from '../productUtils';
+import { increment, decrement, deleteProduct } from '../productUtils';
 
 import { useOutletContext } from "react-router";
 
@@ -38,7 +35,7 @@ const Cart = () => {
                                         <div className={cartCss.toyQuantity}>{product.quantity}</div>
                                         <div className={cartCss.increment} onClick={() => increment(cart, setCart, product.id, product.price, product.url, product.title)}> + </div>
                                     </div>
-                                    <img src={deleteIcon} className={cartCss.deleteIcon} onClick={() => deleteProduct(cart, setCart, product.id)}/>
+                                    <img src={deleteIcon} className={cartCss.deleteIcon} onClick={() => deleteProduct(cart, setCart, product.id)} />
                                 </div>
                             </div>
                         </div>
