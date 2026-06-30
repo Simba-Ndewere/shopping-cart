@@ -50,6 +50,32 @@
     align-items: center;
 }
 
+@media (min-width: 700px) and (max-width:999px) {
+    .headerDescr {
+        width: 70%;
+        font-size: 1.4rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .header {
+        padding: 70px;
+    }
+
+    .imageHeader {
+        background-size: cover;
+        background-position: center 40%;
+    }
+
+    .titleButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (min-width: 1000px) {
     .header {
         flex-direction: row-reverse;
@@ -57,7 +83,6 @@
         align-items: center;
         text-align: left;
         padding-top: 50px;
-
     }
 
     .btn {
