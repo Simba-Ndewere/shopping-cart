@@ -1,4 +1,5 @@
 import homeCss from './Home.module.css';
+import { Link } from "react-router";
 
 const Home = () => {
 
@@ -12,7 +13,7 @@ const Home = () => {
                         <p className={homeCss.headerDescr}>Discover premium smartphones from the world's leading brands.
                             Find the perfect device for work, gaming, photography, and everyday life.</p>
                         <div className={homeCss.btn}>
-                            <p className={homeCss.headerButton}>Shop Phones</p>
+                            <Link to='/shop' className={homeCss.headerButton}>Shop Phones</Link>
                         </div>
                     </div>
                 </div>
