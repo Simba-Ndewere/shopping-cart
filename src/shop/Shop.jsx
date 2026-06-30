@@ -2,8 +2,7 @@ import shopCss from './Shop.module.css';
 
 import { useEffect, useState } from 'react';
 import { useOutletContext } from "react-router";
-import { increment } from '../productUtils';
-import { decrement } from '../productUtils';
+import { increment, decrement } from '../productUtils';
 
 const Shop = () => {
 
